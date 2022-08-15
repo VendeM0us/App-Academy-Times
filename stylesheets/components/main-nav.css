@@ -1,1 +1,11 @@
-/* Your code here */
+.main__nav > ul {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.main__nav > ul > li {
+  margin: 0 5px;
+}
