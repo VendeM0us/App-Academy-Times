@@ -1,1 +1,91 @@
-/* Your code here */
+main {
+  display: grid;
+  grid-template: auto / 70% 30%;
+}
+
+.left-panel, .right-panel {
+  height: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  padding-bottom: 20px;
+}
+
+.left-panel {
+  border-right: 1px solid #e2e2e2;
+}
+
+.left-panel__section-1 {
+  display: grid;
+  grid-template: repeat(2, auto) / repeat(2, auto);
+  padding-bottom: 20px;
+  border-bottom: 1px solid #6f6f6f;
+}
+
+.left-panel__section-1 > h1 {
+  grid-area: 1 / 1 / span 1 / span 2;
+  font-style: italic;
+  font-weight: bold;
+  margin: 25px 0 20px;
+  font-size: 35px;
+  line-height: normal;
+}
+
+.article {
+  padding-right: 15px;
+}
+
+.left-panel__section-1 .article__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: normal;
+  margin-bottom: 25px;
+}
+
+.article__title {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.article__byline {
+  color: #6f6f6f;
+  font-weight: bold;
+  font-size: 13px;
+  margin: 8px 0;
+}
+
+.article__author {
+  text-transform: uppercase;
+}
+
+.article__header {
+  padding: 0;
+}
+
+.article ul {
+  list-style: disc;
+}
+
+.article p {
+  line-height: normal;
+  padding-bottom: 10px;
+  font-size: 12px;
+}
+
+.comments {
+  font-size: 12px;
+  padding: 10px 0;
+  color: #4d7b9f;
+}
+
+.left-panel__section-2 {
+  display: grid;
+  grid-template: auto / 1fr 1fr;
+  border-bottom: 1px solid #6f6f6f;
+}
+
+.left-panel__section-2 article {
+  margin-left: 8px;
+  border-right: 1px solid #e2e2e2;
+  padding-bottom: 20px;
+}
