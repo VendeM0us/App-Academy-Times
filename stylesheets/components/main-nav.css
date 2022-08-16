@@ -9,3 +9,9 @@
 .main__nav > ul > li {
   margin: 0 5px;
 }
+
+@media screen and (max-width: 1000px) {
+  .main__nav {
+    display: none;
+  }
+}

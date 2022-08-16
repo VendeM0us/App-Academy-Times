@@ -10,12 +10,18 @@ main {
   padding-bottom: 20px;
 }
 
-.left-panel {
-  border-right: 1px solid #e2e2e2;
+@media screen and (max-width: 1200px) {
+  .left-panel {
+    grid-area: 1 / 1 / span 1 / span 2;
+  }
+  .right-panel {
+    display: none;
+  }
 }
 
 .right-panel {
-  margin: 15px;
+  border-left: 1px solid #e2e2e2;
+  padding: 15px;
 }
 
 .left-panel__section-1 {
@@ -95,6 +101,10 @@ main {
   padding-bottom: 20px;
 }
 
+.left-panel__section-2 article:last-child {
+  border: none;
+}
+
 .opinions {
   font-weight: bold;
   font-size: 20px;
@@ -108,7 +118,11 @@ main {
 }
 
 .right-panel .article {
-  border-bottom: 1px solid #e2e2e2;
+  border-top: 1px solid #e2e2e2;
+}
+
+.right-panel__section-1 .article:first-child {
+  border: none;
 }
 
 .right-panel__section-1 .article__title {
@@ -133,17 +147,7 @@ main {
 
 .right-panel__section-2 {
   display: grid;
-  grid-template: auto / repeat(2, 1fr);
-}
-
-.right-panel__section-2 div {
-  height: 300px;
-}
-
-.sub-articles__group-1 {
-  border-right: 1px solid #e2e2e2;
-  display: grid;
-  grid-template: repeat(4, 1fr) / auto;
+  grid-template: repeat(4, 1fr) / repeat(2, 1fr);
 }
 
 .right-panel__section-2 .article {
@@ -155,10 +159,4 @@ main {
 .right-panel__section-2 .article header {
   margin: 0;
   padding: 0;
-}
-
-.sub-articles__group-2 {
-  margin-left: 5px;
-  display: grid;
-  grid-template: repeat(3, 1fr) / auto;
 }

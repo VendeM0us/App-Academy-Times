@@ -5,6 +5,12 @@
   border-bottom: 1px solid black;
 }
 
+@media screen and (max-width: 1000px) {
+  .interests-bar {
+    display: none;
+  }
+}
+
 .interests-bar__image {
   display: flex;
   justify-content: center;
