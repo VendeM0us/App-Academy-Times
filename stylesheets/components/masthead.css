@@ -9,10 +9,16 @@
   align-items: center;
 }
 
-.masthead__menu-and-search-icons {
+.masthead__menu-and-search-icons, .search-modal {
+  display: flex;
+  align-items: center;
   font-size: 11px;
   padding:  7px 9px;
   margin-left: 20px;
+}
+
+.search-modal--hidden {
+  visibility: hidden;
 }
 
 .masthead__menu-and-search-icons:hover {
